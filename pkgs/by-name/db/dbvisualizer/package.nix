@@ -21,8 +21,6 @@ stdenv.mkDerivation (finalAttrs: {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  strictDeps = true;
-
   desktopEntry = makeDesktopItem {
     name = finalAttrs.pname;
     desktopName = "DB Visualizer";
